@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heklendik Falan</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8bbd0; /* Pembe tonunda arka plan */
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            position: relative; /* Hello Kitty'yi konumlandırmak için */
+        }
+
+        .container {
+            background: white; /* İç kısımda beyaz arka plan */
+            border-radius: 20px;
+            padding: 40px;
+            width: 400px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            color: #e91e63; /* Pembe başlık */
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+            position: relative;
+        }
+
+        .header h1::after {
+            content: "💖";
+            font-size: 2em;
+            position: absolute;
+            top: 0;
+            right: -30px;
+        }
+
+        .subtitle {
+            color: #e91e63;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .message {
+            font-size: 1.2em;
+            color: #e91e63;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .message::before {
+            content: "❤️";
+            margin-right: 10px;
+            font-size: 1.5em;
+        }
+
+        .message::after {
+            content: "❤️";
+            margin-left: 10px;
+            font-size: 1.5em;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #e91e63; /* Pembe buton */
+            color: white;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+            text-decoration: none; /* Bağlantı altını kaldırır */
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background-color: #c2185b; /* Buton hover efekti */
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #e91e63;
+        }
+
+        footer::before {
+            content: "💖";
+            margin-right: 5px;
+        }
+
+        /* Hello Kitty'yi köşeye yerleştirme */
+        .hello-kitty {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 100px;
+            height: 100px;
+            z-index: 10; /* Sayfanın üst kısmında kalması için */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Heklendik Falan</h1>
+            <p class="subtitle">Bugün bir adım daha öndeyiz!</p>
+        </div>
+
+        <div class="content">
+            <img src="https://i.ibb.co/vV0tLbs/Ekran-g-r-nt-s-2024-11-25-190410.png" alt="cool image" class="profile-image">
+            <p class="message">Heklendik falan... Artık çok havalıyız! 💉✨</p>
+            <!-- Butona link ekledik -->
+            <a href="https://www.youtube.com/watch?v=DTU2VpTJ0So" target="_blank" class="btn">Hadi Başla!</a>
+        </div>
+
+        <footer>
+            <p>© 2024 Heklenmiş ve Havalı Tasarım</p>
+        </footer>
+    </div>
+
+    <!-- Hello Kitty Görseli -->
+    <img src="https://www.pngarts.com/files/11/Cartoon-Hello-Kitty-PNG-Download-Image.png" alt="Hello Kitty" class="hello-kitty">
+</body>
+</html>
